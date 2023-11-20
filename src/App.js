@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import ScrollSelection from "./components/ScrollSelection/ScrollSelection";
+import Contact from "./components/contact/Contact";
+import Parallax from "./components/parallax/Parallax";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Parallax/>
+      <ScrollSelection />
+      <Contact/>
     </div>
   );
 }

@@ -1,0 +1,44 @@
+.scroll-section-outer {
+    overflow: hidden;
+  }
+  
+  .scroll-section-inner {
+    height: 100vh;
+    width: 500vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .scroll-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .scroll-section h3 {
+    color: var(--primaryTextColor);
+    letter-spacing: var(--headlineMedium);
+    font-size: var(--headlineMedium);
+    text-transform: uppercase;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+  .moon-image {
+    position: fixed;
+    top: 50%;
+    left: 5%; 
+    transform: translateY(-50%);
+    width: 100px;  
+    z-index: -1;  
+    opacity: 0;
+}
+.star {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}

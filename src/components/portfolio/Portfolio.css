@@ -1,0 +1,54 @@
+.portfolio-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+    text-align: center; /* Centering the title */
+}
+
+.portfolio-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Spacing between title and showcase */
+}x
+
+.project-showcase {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out; 
+    opacity: 0;
+}
+
+.project-showcase.visible {
+    opacity: 1;
+}
+
+.project-showcase img {
+    width: 100%; /* Use the full width of the container */
+    max-width: 800px; /* Maximum width of the image */
+    max-height: 600px; /* Maximum height of the image */
+    margin: 20px auto; /* Centers the image horizontally */
+    display: block; /* Necessary for margin auto to work */
+    object-fit: cover; /* Adjust the image to cover the dimensions without distortion */
+}
+
+button {
+    background: none; /* Remove the background */
+    border: none;
+    font-size: 5em; /* Increase font size for bigger arrow symbols */
+    color: #ffffff; /* Color of the arrow. Change as needed */
+    cursor: pointer;
+    margin: 0 20px; /* Some space between the arrow and the image */
+    transition: color 0.3s ease-in-out; /* Color transition for hover */
+}
+
+button:hover {
+    color: #555; /* Darker shade on hover */
+}
