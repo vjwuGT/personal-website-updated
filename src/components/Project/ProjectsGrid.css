@@ -1,0 +1,17 @@
+
+
+.projects-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 15rem;
+    text-align: center;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* larger columns */
+    grid-template-rows: repeat(3, 300px); /* larger rows */
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center; /* center grid if container is larger */
+  }

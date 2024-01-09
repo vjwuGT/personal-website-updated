@@ -8,6 +8,9 @@ body {
 }
 
 .parallax {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 125vh;
     width: 100%;
     position: relative;
@@ -68,7 +71,7 @@ body {
 .copy {
     position: absolute;
 
-    bottom: 0%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;

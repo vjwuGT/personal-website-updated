@@ -1,0 +1,54 @@
+.project {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%; /* ensure it fills the grid cell */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+    position: absolute; /* Make image as a background */
+    z-index: -1; /* Send image to back */
+  }
+  
+  .project-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    width: 80%; /* Adjust width to allow text to expand */
+    max-width: 90%; /* Prevents it from getting too wide */
+  }
+  
+  
+  .project-info h3, .project-info p {
+    margin: 5px 0; /* Adjust margins between title and description */
+    word-wrap: break-word; /* Ensures text breaks to avoid overflow */
+  }
+  
+  .project:hover {
+    transform: scale(1.05); /* Slightly scale up */
+  }
+  
+  .project h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    letter-spacing: normal; 
+  }
+  
+  .project:hover .project-image {
+    opacity: 1;
+  }
+  

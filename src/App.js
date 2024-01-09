@@ -9,7 +9,6 @@ function App() {
     <div>
       <Parallax/>
       <ScrollSelection />
-      <Contact/>
     </div>
   );
 }

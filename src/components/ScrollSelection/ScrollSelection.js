@@ -4,9 +4,9 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./ScrollSelection.css";
 import About from "../about/About";
 import Moon from "../../assets/moon2.png";
-import Skills from "../Skills/Skills";
-import EducationExperience from "../EducationExperience/EducationExperience";
-import Portfolio from "../portfolio/Portfolio";
+import YouTube from "../YouTube/YouTube";
+import Resume from "../Resume/Resume";
+import ProjectCreator from "../Project/ProjectCreator";
 
 function ScrollSelection() {
   const sectionRef = useRef(null);
@@ -84,13 +84,13 @@ function ScrollSelection() {
             <About></About>
           </div>
           <div className="scroll-section">
-            <EducationExperience />
+            <Resume />
           </div>
           <div className="scroll-section">
-            <Skills />
+            <ProjectCreator />
           </div>
           <div className="scroll-section">
-            <Portfolio />
+            <YouTube />
           </div>
         </div>
       </div>
